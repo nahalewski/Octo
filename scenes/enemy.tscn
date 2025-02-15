@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqa5x8tf80hfv"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_vh70r"]
+[ext_resource type="Texture2D" uid="uid://b7yet21asix0k" path="res://assets/300 Characters Free! 128x128/V1.0/12.png" id="1_xaije"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_en2ab"]
+radius = 47.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8x2qy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xaije")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_vh70r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_en2ab")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8x2qy")
