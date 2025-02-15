@@ -1,27 +1,140 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqa5x8tf80hfv"]
+[gd_scene load_steps=30 format=3 uid="uid://cqa5x8tf80hfv"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_vh70r"]
-[ext_resource type="Texture2D" uid="uid://b7yet21asix0k" path="res://assets/300 Characters Free! 128x128/V1.0/12.png" id="1_xaije"]
+[ext_resource type="Texture2D" uid="uid://bp04wwap234sn" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_1.png" id="2_fp6y2"]
+[ext_resource type="Texture2D" uid="uid://clm206msgsi2u" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_1.png" id="2_phifk"]
+[ext_resource type="Texture2D" uid="uid://bwokxdu4fyhcx" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_2.png" id="3_7utyq"]
+[ext_resource type="Texture2D" uid="uid://8sjipjahfigs" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_2.png" id="3_xe00v"]
+[ext_resource type="Texture2D" uid="uid://mu4c6g7udtes" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_3.png" id="4_evpex"]
+[ext_resource type="Texture2D" uid="uid://qjcnhef4kemm" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_3.png" id="4_scine"]
+[ext_resource type="Texture2D" uid="uid://yt1eg8x1jh0r" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_4.png" id="5_b1ryv"]
+[ext_resource type="Texture2D" uid="uid://b3808yobeos7" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_4.png" id="5_qyqpk"]
+[ext_resource type="Texture2D" uid="uid://cxhhupxcmli2f" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_5.png" id="6_lix14"]
+[ext_resource type="Texture2D" uid="uid://b6cxncp3n1fsm" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_5.png" id="6_rjg5k"]
+[ext_resource type="Texture2D" uid="uid://o5kn4nl112ni" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_6.png" id="7_8rfuq"]
+[ext_resource type="Texture2D" uid="uid://doxnu7fuy2kq2" path="res://Warrior/Individual Sprite/idle/Warrior_Idle_6.png" id="7_vp0lu"]
+[ext_resource type="Texture2D" uid="uid://b0h5n0rmfgjkr" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_7.png" id="8_275qw"]
+[ext_resource type="Texture2D" uid="uid://bpynmty1i67me" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_8.png" id="9_wwf63"]
+[ext_resource type="Texture2D" uid="uid://cj1laamtoityy" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_9.png" id="10_dsk1e"]
+[ext_resource type="Texture2D" uid="uid://c0x6uq038gxvi" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_10.png" id="11_0t2ph"]
+[ext_resource type="Texture2D" uid="uid://bywlh530buofx" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_11.png" id="12_82ian"]
+[ext_resource type="Texture2D" uid="uid://ryda7px6p4ae" path="res://Warrior/Individual Sprite/Attack/Warrior_Attack_12.png" id="13_c8wj2"]
+[ext_resource type="Texture2D" uid="uid://8har87dy7xs3" path="res://Warrior/Individual Sprite/Run/Warrior_Run_1.png" id="20_cfkk0"]
+[ext_resource type="Texture2D" uid="uid://cc36ldj8be4pf" path="res://Warrior/Individual Sprite/Run/Warrior_Run_2.png" id="21_og7m4"]
+[ext_resource type="Texture2D" uid="uid://c8h3w2sneb0co" path="res://Warrior/Individual Sprite/Run/Warrior_Run_3.png" id="22_p75is"]
+[ext_resource type="Texture2D" uid="uid://bcwhekpboi2f6" path="res://Warrior/Individual Sprite/Run/Warrior_Run_4.png" id="23_g15b8"]
+[ext_resource type="Texture2D" uid="uid://c374d7qo8hj8g" path="res://Warrior/Individual Sprite/Run/Warrior_Run_5.png" id="24_jgimn"]
+[ext_resource type="Texture2D" uid="uid://diiajby7ae35g" path="res://Warrior/Individual Sprite/Run/Warrior_Run_6.png" id="25_13qcg"]
+[ext_resource type="Texture2D" uid="uid://b3thmunexd8j5" path="res://Warrior/Individual Sprite/Run/Warrior_Run_7.png" id="26_vmpel"]
+[ext_resource type="Texture2D" uid="uid://bod66bc8tjckk" path="res://Warrior/Individual Sprite/Run/Warrior_Run_8.png" id="27_yikr5"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_en2ab"]
-radius = 47.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ty0y"]
+size = Vector2(19, 33)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8x2qy"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_xaije")
+"texture": ExtResource("2_fp6y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7utyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_evpex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qyqpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lix14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8rfuq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_275qw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wwf63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dsk1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0t2ph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_82ian")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_c8wj2")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_phifk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xe00v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_scine")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b1ryv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rjg5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vp0lu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_cfkk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_og7m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_p75is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_g15b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jgimn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_13qcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vmpel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yikr5")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 8.0
 }]
 
 [node name="Enemy" type="CharacterBody2D"]
 script = ExtResource("1_vh70r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_en2ab")
+position = Vector2(-4.5, 4.5)
+shape = SubResource("RectangleShape2D_1ty0y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8x2qy")
+animation = &"attack"
+frame_progress = 0.150989

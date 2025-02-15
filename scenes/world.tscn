@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://41vnlfwe2prq"]
+[gd_scene load_steps=13 format=4 uid="uid://41vnlfwe2prq"]
 
 [ext_resource type="PackedScene" uid="uid://1taxlw1lr3r1" path="res://scenes/knight.tscn" id="1_v3lnr"]
 [ext_resource type="Texture2D" uid="uid://dkkjmdwafp2ea" path="res://assets/Oak Woods/decorations/fence_1.png" id="2_dtekl"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bo5h0fr18rqh8" path="res://assets/Oak Woods/oak_woods_tileset.png" id="7_cv34e"]
 [ext_resource type="Texture2D" uid="uid://nnbauvwsyt8l" path="res://assets/Oak Woods/background/background_layer_1.png" id="7_ij5px"]
 [ext_resource type="PackedScene" uid="uid://cqa5x8tf80hfv" path="res://scenes/enemy.tscn" id="8_vdm2x"]
+[ext_resource type="PackedScene" uid="uid://d1lrblruywym6" path="res://scenes/ui.tscn" id="9_pd4if"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a68yx"]
 size = Vector2(1151, 39)
@@ -461,4 +462,6 @@ tile_map_data = PackedByteArray("AAAAACYAAAASAAwAAAAAACcAAAASAA0AAAABACYAAAATAAw
 tile_set = SubResource("TileSet_oqw1m")
 
 [node name="Enemy" parent="." instance=ExtResource("8_vdm2x")]
-position = Vector2(1080, 561)
+position = Vector2(631, 587)
+
+[node name="UI" parent="." instance=ExtResource("9_pd4if")]

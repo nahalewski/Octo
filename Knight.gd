@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var SPEED = 300.0
 @export var JUMP_FORCE = -400.0
-@export var attack_cooldown = 0.5
+@export var attack_cooldown = 0.0  # Changed to 0 for no cooldown
 
 # Stats
 @export var max_health = 100
@@ -28,6 +28,7 @@ var is_alive = true
 
 @onready var anim_sprite = $AnimatedSprite2D
 @onready var camera = $Camera2D
+@onready var inventory = $Inventory
 
 signal health_changed(new_health)
 signal magic_changed(new_magic)
@@ -58,9 +59,13 @@ func _ready():
 	print("AnimatedSprite2D found successfully")
 	# Ensure we start with idle animation
 	play_animation("idle")
+	
+	# Add some test items to inventory
+	if inventory:
+		inventory.add_test_items()
 
 func _physics_process(delta):
-	if not is_alive:
+	if not is_alive or (inventory and inventory.is_open):
 		return
 		
 	# Regenerate magic over time
@@ -132,9 +137,6 @@ func attack():
 	# Wait for attack animation to finish
 	await anim_sprite.animation_finished
 	
-	# Add cooldown after animation finishes
-	await get_tree().create_timer(attack_cooldown).timeout
-	
 	is_attacking = false
 	can_attack = true
 	
@@ -159,7 +161,6 @@ func magic_attack():
 	# You can instantiate a magic projectile scene
 	
 	await anim_sprite.animation_finished
-	await get_tree().create_timer(attack_cooldown).timeout
 	
 	is_attacking = false
 	can_attack = true

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://e34kq3a5w2pg"]
+
+[ext_resource type="Texture2D" uid="uid://f0eeeebvoe4h" path="res://assets/30 Animations Extra Plus! - 64x64/100/Idle, 4 Frames/1.png" id="1_f6503"]
+[ext_resource type="Texture2D" uid="uid://iwpjg7jnp2d6" path="res://assets/30 Animations Extra Plus! - 64x64/100/Idle, 4 Frames/2.png" id="2_o4kjf"]
+[ext_resource type="Texture2D" uid="uid://dm56evhpc4ch7" path="res://assets/30 Animations Extra Plus! - 64x64/100/Idle, 4 Frames/3.png" id="3_acatd"]
+[ext_resource type="Texture2D" uid="uid://j6poc6687fuy" path="res://assets/30 Animations Extra Plus! - 64x64/100/Idle, 4 Frames/4.png" id="4_su824"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8lohn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f6503")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o4kjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_acatd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_su824")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 4.0
+}]
+
+[node name="Knight_girl" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8lohn")
+animation = &"idel"
+frame_progress = 0.569601
